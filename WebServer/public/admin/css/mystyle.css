@@ -1,0 +1,60 @@
+.tb-action-link>a{
+	color: #fff !important;
+}
+.tb-action-link:hover>a{
+	font-weight: bold;
+	font-style: italic;
+	font-variant: normal;
+	text-decoration: none !important;
+}
+
+.tb-btn-edit {
+	color: blue;
+}
+
+.tb-btn-del {
+	color: red;
+}
+.panel-footer{
+	background-color: #0a250c !important;
+}
+.text-right {
+	color: white !important;
+}
+.page-header{
+	color: white !important;
+}
+div.dataTables_wrapper div.dataTables_filter label{
+	color: white;
+}
+div.dataTables_wrapper div.dataTables_info {
+	color: white;
+}
+.table {
+	background-color: white;
+	color: black !important;
+}
+h1.panel-heading{
+	color: white !important;
+	font-size: 25px !important;
+	font-weight: bold;
+}
+.form-horizontal .control-label{
+	color: white !important;
+}
+::placeholder { 
+color: rgb(71, 68, 68) !important;
+}
+/* .table-bordered{
+	border:1px solid #b9680b !important;
+} */
+@media (min-width: 480px) and (max-width: 767px) {
+	.col-lg-3 {
+		width: 25% !important;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+	.col-lg-3 {
+		width: 25% !important;
+  }
+}

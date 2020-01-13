@@ -1,0 +1,298 @@
+{
+	"info": {
+		"_postman_id": "bc6b916c-39db-493b-92b6-69e970e59895",
+		"name": "CoffeeManagement",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "nguyen_lieu",
+			"item": []
+		},
+		{
+			"name": "thanh_vien",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ten_dang_nhap",
+									"value": "diennh3",
+									"type": "text"
+								},
+								{
+									"key": "mat_khau",
+									"value": "12345",
+									"type": "text"
+								},
+								{
+									"key": "ho_ten",
+									"value": "Nguyen Hieu Dien",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "nguyenhieudien@hotmail.com",
+									"type": "text"
+								},
+								{
+									"key": "gioi_tinh",
+									"value": "M",
+									"type": "text"
+								},
+								{
+									"key": "sinh_nhat",
+									"value": "1933-12-31",
+									"type": "text"
+								},
+								{
+									"key": "dia_chi",
+									"value": "Can Tho",
+									"type": "text"
+								},
+								{
+									"key": "quyen",
+									"value": "admin",
+									"type": "text"
+								},
+								{
+									"key": "so_dt",
+									"value": "0123456789",
+									"type": "text"
+								},
+								{
+									"key": "trang_thai",
+									"value": "available",
+									"type": "text"
+								},
+								{
+									"key": "tinh",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "ngay_tao",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "ngay_sua",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "ma_tv",
+									"value": "3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:9080/thanhvien/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9080",
+							"path": [
+								"thanhvien",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "ten_dang_nhap",
+									"value": "diennh222",
+									"type": "text"
+								},
+								{
+									"key": "mat_khau",
+									"value": "123456789",
+									"type": "text"
+								},
+								{
+									"key": "ho_ten",
+									"value": "Nguyen Dien",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "nguyenhieudien222@hotmail.com",
+									"type": "text"
+								},
+								{
+									"key": "gioi_tinh",
+									"value": "M",
+									"type": "text"
+								},
+								{
+									"key": "sinh_nhat",
+									"value": "1933-12-31",
+									"type": "text"
+								},
+								{
+									"key": "dia_chi",
+									"value": "Can Tho",
+									"type": "text"
+								},
+								{
+									"key": "quyen",
+									"value": "admin",
+									"type": "text"
+								},
+								{
+									"key": "so_dt",
+									"value": "0123456789",
+									"type": "text"
+								},
+								{
+									"key": "trang_thai",
+									"value": "available",
+									"type": "text"
+								},
+								{
+									"key": "tinh",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "ngay_tao",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "ngay_sua",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "ma_tv",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:9080/thanhvien/update/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9080",
+							"path": [
+								"thanhvien",
+								"update",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:9080/thanhvien",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9080",
+							"path": [
+								"thanhvien"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:9080/thanhvien/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9080",
+							"path": [
+								"thanhvien",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:9080/thanhvien/remove/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9080",
+							"path": [
+								"thanhvien",
+								"remove",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
