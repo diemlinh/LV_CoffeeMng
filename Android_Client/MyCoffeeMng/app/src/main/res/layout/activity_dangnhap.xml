@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2DF531C0">
+
+    <TextView
+        android:id="@+id/textDangnhap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="@string/dangnhap"
+        android:layout_above="@+id/lnKhungDangNhap"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="5dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/lycaphe"
+        android:layout_above="@+id/textDangnhap"
+        android:layout_marginTop="30dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/lnKhungDangNhap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        >
+
+        <!--<EditText-->
+            <!--android:id="@+id/edIP"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:background="#FFFFFF"-->
+            <!--android:drawableLeft="@drawable/userlogin"-->
+            <!--android:drawablePadding="10dp"-->
+            <!--android:hint="@string/IP"-->
+            <!--android:padding="10dp"-->
+            <!--android:singleLine="true"-->
+            <!--android:textColor="#0033CC"-->
+            <!--android:textColorHint="@color/colorPrimary" />-->
+        <EditText
+            android:id="@+id/edTenDangNhapDN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#FFFFFF"
+            android:drawableLeft="@drawable/userlogin"
+            android:drawablePadding="10dp"
+            android:hint="@string/tendangnhap"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#0033CC"
+            android:textColorHint="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/edMatKhauDN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nhapmatkhau"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#FFFFFF"
+            android:textColorHint="@color/colorPrimary"
+            android:drawableLeft="@drawable/passwordlogin"
+            android:drawablePadding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimary"
+            android:password="true"
+            />
+        <!--<CheckBox-->
+            <!--android:id="@+id/cbremember"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:layout_marginBottom="5dp"-->
+            <!--android:checked="true"-->
+            <!--android:text="Remember Me" />-->
+
+        <Button
+            android:id="@+id/btnDongYDN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đăng nhập"
+            android:padding="10dp"
+            android:background="#FFCC33"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
+</RelativeLayout>
